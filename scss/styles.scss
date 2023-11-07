@@ -1,0 +1,62 @@
+@import'./general/variables.scss';
+@import'./general/reset.scss';
+
+@import'./layout/header.scss';
+@import'./layout/footer.scss';
+
+@import'./pages/index.scss';
+@import'./pages/inventory.scss';
+@import'./pages/gallery.scss';
+@import'./pages/about.scss';
+@import'./pages/contact.scss';
+@import'./pages/members.scss';
+
+
+body {
+    font-family:$font-stack;
+    background-color: white;
+
+
+     
+
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    width: 30px;
+    height: 20px;
+  
+    .bar {
+      width: 100%;
+      height: 3px;
+      background-color: gold;
+      margin: 2px 0;
+    }
+  }
+  
+.video {
+    position: relative;
+    height: 470px;
+    overflow: hidden;
+  
+    video {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  }
+  
+ 
+
+ 
+ 
+   
+
+ 
+ 

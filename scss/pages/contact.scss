@@ -1,0 +1,61 @@
+
+
+// Estilos para la sección de oficina
+.ofi {
+    width: 700px;
+    height: 500px;
+    position: relative;
+    left: 300px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 6px 3px $shadow-color;
+  
+  
+  }
+  #cs {
+      height: 100px;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-family: $font-stack;
+      font-size: 30px;
+      text-align: center;
+    }
+  
+  // Estilos para la información
+  .info {
+    position: absolute;
+    top: 900px;
+    margin-left: 70px;
+  }
+  
+  // Estilos para el formulario
+  .formu {
+    margin-left: 1050px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-top: -550px;
+  
+    input, textarea {
+      margin-right: 80px;
+      border-radius: 20px;
+      background-color: silver;
+    }
+  
+    input {
+      width: 100%; // Asegura que los inputs ocupen todo el ancho disponible
+    }
+  
+    textarea {
+      width: 100%; // Asegura que el textarea ocupe todo el ancho disponible
+    }
+  
+    #submit {
+      width: 100px;
+      margin-left: 70px;
+      border-radius: 20px;
+      background-color: black;
+      color: $text-color;
+      font-family: $font-stack;
+      font-size: 16px;
+    }
+}

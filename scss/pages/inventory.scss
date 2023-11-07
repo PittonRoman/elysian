@@ -1,0 +1,89 @@
+
+  .inventory-content {
+  margin: 150px 0 200px 50px;
+
+  h1 {
+    font-size: 36px;
+    font-family: $font-stack;
+  }
+  h2, h3 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .inventory-form {
+    margin-top: 20px;
+    font-family: $font-stack;
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 200px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .reset {
+    margin-left: 50px;
+
+    #reset {
+      background-color: black;
+      color: gold;
+    }
+  }
+}
+
+.product4 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 150px 300px;
+  width: 1000px;
+
+  article {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    box-shadow: 0px 0px 6px 3px $shadow-color;
+
+    img {
+      max-width: 100%;
+      flex-wrap: nowrap;
+    }
+
+    .price {
+      font-size: 16px;
+      color: #ff6600;
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 16px;
+      color: #333;
+      margin: 0;
+    }
+
+    #detail {
+      color: #333;
+      text-decoration: none;
+    }
+  }
+  #invent {
+    margin-bottom: 100px;
+  }
+}

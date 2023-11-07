@@ -1,0 +1,26 @@
+main {
+    #mem {
+      font-family:$font-stack;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 60px;
+    }
+  
+    .product2 {
+      display: grid;
+      grid-template-columns: repeat(3, 410px);
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+      margin-top: 30px;
+  
+      article {
+        .members {
+          width: 250px;
+          height: 250px;
+          padding: 10px;
+          object-fit: cover;
+        }
+      }
+    }
+  }

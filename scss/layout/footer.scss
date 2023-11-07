@@ -1,0 +1,70 @@
+footer {
+    background-color: black;
+    color: gold;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+  
+    /*(slogan)*/
+    .footer-left {
+      flex: 2; /* Ocupa 2 partes de las 6 disponibles */
+      text-align: left;
+      padding-left: 20px;
+    }
+  
+    /*  (inventory y brands)*/
+    .footer-right {
+      text-align: right;
+      padding-right: 100px;
+    }
+  
+    .inventory {
+      list-style: none;
+      margin-right: 40px;
+      margin-top: 20px;
+  
+      a {
+        color: gold;
+        text-decoration: none;
+      }
+    }
+  
+    .brands {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 0 20px;
+      margin-left: 100px;
+  
+      .brands-column {
+        flex: 1;
+        padding: 20px;
+  
+        p {
+          margin: 5px 0;
+        }
+      }
+    }
+  
+    /*enlaces*/
+    .footer-column2 {
+      margin-left: 150px;
+      margin-top: 50px;
+  
+      .site3 {
+        list-style-type: none; /* Eliminar puntos */
+  
+        li a {
+          color: gold;
+          text-decoration: none;
+        }
+      }
+    }
+  
+    /*redes*/
+    .social-icons {
+      flex: 1; /* Ocupa 1 parte de las 6 disponibles */
+      text-align: center;
+      margin-top: 70px;
+      color: silver;
+    }
+  }
