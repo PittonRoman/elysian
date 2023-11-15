@@ -1,45 +1,45 @@
 #cs2, #cs3 {
-    font-family:$font-stack;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 60px;
-  }
-  
-  #imageA {
-    margin-left: 30px;
-    width: 500px;
-    // Estilos para sombras directamente
-    -webkit-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
-    -moz-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
-    box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
-  }
-  
-  p {
-    text-align: justify;
-  }
-  
-  .video2 {
-    margin-left: 750px;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    margin-top: -200px;
-    // Estilos para sombras directamente
-    -webkit-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
-    -moz-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
-    box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
-  }
-  
-  .text {
-    margin-right: 30px;
-    margin-left: 750px;
-    font-family:$font-stack;
-    font-size: 20px;
-    margin-top: -450px;
-  }
-  
-  .text2 {
-    width: 400px;
-    text-align: left;
-    margin-top: 450px;
-    margin-left: 30px;
-  }
+  font-family: $font-stack;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#imageA {
+  margin-left: 30px;
+  width: 500px;
+  // Estilos para sombras directamente
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
+  -moz-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
+  box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
+}
+
+p {
+  text-align: justify;
+}
+
+.video2 {
+  margin-left: 750px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-top: -200px;
+  // Estilos para sombras directamente
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
+  -moz-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
+  box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
+}
+
+.text {
+  margin-right: 30px;
+  margin-left: 750px;
+  font-family: $font-stack;
+  font-size: 20px;
+  margin-top: -450px;
+}
+
+.text2 {
+  width: 400px;
+  text-align: left;
+  margin-top: 450px;
+  margin-left: 30px;
+}
