@@ -2,29 +2,32 @@ footer {
     background-color: black;
     color: gold;
     display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
+    align-items: center;
   
     /*(slogan)*/
     .footer-left {
-      flex: 2; /* Ocupa 2 partes de las 6 disponibles */
+      flex: 2;
       text-align: left;
       padding-left: 20px;
     }
   
-    /*  (inventory y brands)*/
+    /*(inventory y brands)*/
     .footer-right {
       text-align: right;
       padding-right: 100px;
-    }
   
-    .inventory {
-      list-style: none;
-      margin-right: 40px;
-      margin-top: 20px;
+      .site2 {
+        list-style: none;
   
-      a {
-        color: gold;
-        text-decoration: none;
+        li {
+          display: inline-block;
+          margin: 0 20px;
+  
+          a {
+            color: gold;
+            text-decoration: none;
+          }
+        }
       }
     }
   
@@ -51,20 +54,93 @@ footer {
       margin-top: 50px;
   
       .site3 {
-        list-style-type: none; /* Eliminar puntos */
+        list-style-type: none;
   
-        li a {
-          color: gold;
-          text-decoration: none;
+        li {
+          display: inline-block;
+          margin: 0 20px;
+  
+          a {
+            color: gold;
+            text-decoration: none;
+          }
         }
       }
     }
   
     /*redes*/
     .social-icons {
-      flex: 1; /* Ocupa 1 parte de las 6 disponibles */
+      flex: 1;
       text-align: center;
       margin-top: 70px;
       color: silver;
+    }
+  
+    @media screen and (max-width: 700px) {
+      .footer-right {
+        padding-right: 5px;
+  
+        .site2 {
+          li {
+            margin: 0 5px;
+          }
+        }
+      }
+  
+      .brands {
+        padding: 0 5px;
+      }
+  
+      .footer-column2 {
+        margin-left: 5px;
+  
+        .site3 {
+          li {
+            margin: 0 5px;
+          }
+        }
+      }
+  
+      .social-icons {
+        margin-top: 5px;
+      }
+    }
+  
+    @media screen and (max-width: 300px) {
+      .footer-left {
+        padding-left: 5px;
+      }
+  
+      .footer-right {
+        padding-right: 2px;
+  
+        .site2 {
+          li {
+            margin: 0 2px;
+  
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+  
+      .brands {
+        padding: 0 2px;
+      }
+  
+      .footer-column2 {
+        margin-left: 2px;
+  
+        .site3 {
+          li a {
+            font-size: 12px;
+          }
+        }
+      }
+  
+      .social-icons {
+        margin-top: 2px;
+      }
     }
   }

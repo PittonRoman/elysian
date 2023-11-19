@@ -1,0 +1,6 @@
+@import '../general/mixin.scss';
+
+%box-shadow {
+    @include box-shadow;
+  }
+  

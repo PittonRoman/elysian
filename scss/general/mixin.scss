@@ -1,0 +1,10 @@
+@mixin box-shadow {
+    -webkit-box-shadow: 0px 0px 6px 3px $box-shadow-color;
+    -moz-box-shadow: 0px 0px 6px 3px $box-shadow-color;
+    box-shadow: 0px 0px 6px 3px $box-shadow-color;
+  }
+  
+  @mixin justify-text {
+    text-align: justify;
+  }
+  

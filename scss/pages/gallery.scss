@@ -1,4 +1,7 @@
-
+@import '../general/variables';
+@import'../general/reset';
+@import'../general/mixin';
+@import'../general/extend';
 #carousel {
     max-width: 1000px;
     margin: auto;

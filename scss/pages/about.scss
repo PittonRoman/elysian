@@ -1,32 +1,56 @@
+@import '../general/variables';
+@import'../general/reset';
+@import'../general/mixin';
+@import'../general/extend';
 #cs2, #cs3 {
   font-family: $font-stack;
   font-size: 30px;
   text-align: center;
   margin-top: 60px;
+
+  // Breakpoint para vista celular (300px)
+  @media screen and (max-width: 300px) {
+    font-size: 24px;
+    margin-top: 30px;
+  }
 }
 
 #imageA {
   margin-left: 30px;
+  margin-top: 300px;
   width: 500px;
-  // Estilos para sombras directamente
-  -webkit-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
-  -moz-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
-  box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
+  @extend %box-shadow;
+
+  // Breakpoint para vista celular (300px)
+  @media screen and (max-width: 300px) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 
 p {
-  text-align: justify;
+  @include justify-text;
 }
 
 .video2 {
-  margin-left: 750px;
-  margin-right: 30px;
-  margin-bottom: 20px;
-  margin-top: -200px;
-  // Estilos para sombras directamente
-  -webkit-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
-  -moz-box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
-  box-shadow: 0px 0px 6px 3px rgba(196, 161, 22, 0.71);
+  width: 87vh;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  @extend %box-shadow;
+
+  // Breakpoint para vista celular (300px)
+  @media screen and (max-width: 300px) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  // Breakpoint para vista de tablet (700px)
+  @media screen and (min-width: 301px) and (max-width: 700px) {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 
 .text {
@@ -35,6 +59,20 @@ p {
   font-family: $font-stack;
   font-size: 20px;
   margin-top: -450px;
+
+  // Breakpoint para vista celular (300px)
+  @media screen and (max-width: 300px) {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    margin-top: -300px;
+  }
+
+  // Breakpoint para vista de tablet (700px)
+  @media screen and (min-width: 301px) and (max-width: 700px) {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 .text2 {
@@ -42,4 +80,16 @@ p {
   text-align: left;
   margin-top: 450px;
   margin-left: 30px;
+
+  // Breakpoint para vista celular (300px)
+  @media screen and (max-width: 300px) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  // Breakpoint para vista de tablet (700px)
+  @media screen and (min-width: 301px) and (max-width: 700px) {
+    width: 80%;
+    margin-left: 10%;
+  }
 }

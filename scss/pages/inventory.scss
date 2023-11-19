@@ -1,4 +1,7 @@
-
+@import '../general/variables';
+@import'../general/reset';
+@import'../general/mixin';
+@import'../general/extend';
   .inventory-content {
   margin: 150px 0 200px 50px;
 

@@ -1,3 +1,9 @@
+@import '../general/variables';
+@import'../general/reset';
+@import'../general/mixin';
+@import'../general/extend';
+
+
 main {
     #mem {
       font-family:$font-stack;

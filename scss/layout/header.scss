@@ -1,55 +1,97 @@
+@import '../general/variables';
+
 header {
-    background-color: black;
-  
-    &.main.header {
-      width: 100%;
-      height: 100px;
-      padding: 20px;
-  
-      .logo {
-        width: 1000px;
-        height: 20px;
-        top: 0;
-        left: 0;
-        padding: 5px;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+
+  .logo {
+    width: 100%;
+    max-width: 1000px; // Ajustar según necesidades
+    height: 20px;
+    top: 0;
+    left: 0;
+    padding: 5px;
+  }
+
+  nav {
+    font-size: 20px;
+    font-family: $font-stack;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 45px;
+
+    .containernav {
+      padding: 0;
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      ul.site {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          display: inline-block;
+          margin: 0 20px;
+          position: relative;
+
+          a {
+            text-decoration: none;
+            color: gold;
+          }
+        }
       }
-  
-      nav {
-        font-size: 20px;
-        font-family: $font-stack;
-        display: flex;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .logo {
+      max-width: 100%; // Ajustar según necesidades
+    }
+
+    nav {
+      padding: 20px;
+
+      .containernav {
         align-items: center;
-        justify-content: flex-end;
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 45px;
-  
-        .containernav {
-          padding: 0;
-          width: auto;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-  
-          ul.site {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-  
-            li {
-              list-style: none;
-              display: inline-block;
-              margin: 0 20px;
-              position: relative;
-  
-              a {
-                text-decoration: none;
-                color: gold;
-            }
+
+        ul.site {
+          li {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .logo {
+      max-width: 100%; // Ajustar según necesidades
+    }
+
+    nav {
+      padding: 10px;
+
+      .containernav {
+        align-items: center;
+
+        ul.site {
+          li {
+            margin: 5px 0;
           }
         }
       }
     }
   }
 }
+
+
